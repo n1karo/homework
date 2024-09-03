@@ -1,0 +1,30 @@
+.block {
+    background: rgb(216, 216, 125);
+    width: 250px;
+    border: 1px solid black;
+    height: 200px;
+    box-shadow: inset 0px 0px 35px 0px;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 10px;
+}
+#bloc {
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 0px;
+}
+.inline {
+    padding-left: 20px;
+    padding-top: 35px;
+    text-align: left;
+    display: block;
+}
+.blockkk {
+    background: rgb(235, 220, 245);
+    width: 1300px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: auto;
+    height: 500px;
+}
