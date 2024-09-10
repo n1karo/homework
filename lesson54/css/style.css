@@ -1,0 +1,28 @@
+body {
+    background: rgb(100, 100, 100);
+}
+p {
+    font-size: 45px;
+    color: white;
+}
+
+.square {
+    background: white;
+    border-radius: 10px;
+    width: 900px;
+    height: 100px;
+    position: fixed;
+    z-index: -1;
+    right: 50px;
+    left: auto;
+    bottom: 100px;
+}
+.circle {
+    position: fixed;
+    background: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    bottom: 150px;
+    left: 1100px;
+}
