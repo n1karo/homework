@@ -1,0 +1,47 @@
+body {
+    background: rgb(31, 31, 31);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.line {
+    background: white;
+    width: 5px;
+    height: 30px;
+    position: absolute;
+    top: -50px;
+    left: -150px;
+    transition: 1.5s;
+}
+
+.square:hover .line{
+    width: 500px;
+}
+
+.text {
+    color: green;
+    font-size: 30px;
+    opacity: 0;
+    transition: 1s 1.5s;
+}
+
+.square:hover .text {
+    opacity: 1;
+}
+
