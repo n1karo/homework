@@ -1,0 +1,1164 @@
+:root {
+    --black-color: #000;
+    --line-hight-120: 1.2;
+    --line-hight-125: 1.25;
+    --line-hight-128: 1.28;
+    --line-hight-129: 1.29;
+}
+
+
+.body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    background: #fff;
+    color: var(--black-color)
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.main__phones,
+.main__categories,
+.main__sell,
+.main__best,
+.main__ideas,
+.main__look {
+    margin-bottom: 75px;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1324px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.button {
+    font-size: 18px;
+    line-height: var(--line-hight-120);
+    text-transform: capitalize;
+    color: var(--black-color);
+    background: inherit;
+    border: 1px solid #000;
+    border-radius: 200px;
+    max-width: 170px;
+    width: 100%;
+    height: 50px;
+}
+
+
+/* ======================================================== */
+
+.header {
+    font-size: 14px;
+    line-height: var(--line-hight-120);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 25px 0;
+}
+
+.header__logo {
+    z-index: 11;
+}
+
+
+.header__nav--list {
+    display: flex;
+    gap: 34px;
+}
+
+.header__nav--item:nth-child(2) .header__nav--link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+
+.header__nav--item:last-child {
+    margin-left: 10px;
+}
+
+.header__nav--link {
+    display: block;
+    padding: 5px 0;
+}
+
+.header__menu--mobile {
+    display: none;
+    justify-self: center;
+    margin-top: 15px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.burger-icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background: var(--black-color);
+    transition: all .4s;
+}
+
+.burger-icon span {
+    position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+    content: '';
+    position: absolute;
+}
+
+.burger-icon span::before {
+    top: -8px;
+}
+
+.burger-icon span::after {
+    bottom: -8px;
+}
+
+.body--opened-menu .burger-icon span {
+    background: transparent;
+}
+
+.body--opened-menu .burger-icon span::before {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::after {
+    bottom: 0px;
+    transform: rotate(-45deg);
+}
+
+/* =============================================== */
+
+
+.phones__inner {
+    background: url("../img/decor/bg.png") no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 56px;
+    position: relative;
+    height: 550px;
+}
+
+.phones__info {
+    max-width: 588px;
+}
+
+.phones__title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 58px;
+    line-height: 120%;
+    color: var(--black-color);
+    margin-bottom: 19px;
+}
+
+.phones__text {
+    font-size: 16px;
+    line-height: var(--line-hight-120);
+    color: var(--black-color);
+    margin-bottom: 30px;
+}
+
+
+.phones__slider {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.phones__wrapper {
+    margin-left: 15px;
+}
+
+.phones__slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 56px;
+
+}
+
+.phones__prev {
+    margin-right: 15px;
+}
+
+.phones__next,
+.phones__prev {
+    background: inherit;
+    cursor: pointer;
+    color: #000;
+}
+
+.phones__next::after,
+.phones__prev::after {
+    font-size: 35px;
+}
+
+
+
+/* =============================================== */
+
+
+.categories__top {
+    margin-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+}
+
+.categories__title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 42px;
+    line-height: var(--line-hight-125);
+    text-align: center;
+    color: var(--black-color);
+}
+
+.categories__text {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 14px;
+    line-height: var(--line-hight-120);
+    text-align: center;
+    color: var(--black-color);
+    max-width: 628px;
+}
+
+.categories__items {
+    display: flex;
+    gap: 16px;
+}
+
+.categories__items-left {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.categories__laptops {
+    box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+    padding: 0 42px;
+}
+
+.categories__laptops-img {
+    max-width: 500px;
+}
+
+.categories__laptops-img img {
+    width: 100%;
+}
+
+.categories__laptops-text {
+    font-size: 15px;
+    line-height: var(--line-hight-128);
+    text-align: right;
+    color: var(--black-color);
+    justify-self: end;
+}
+
+.categories__laptops-title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 32px;
+    line-height: var(--line-hight-120);
+    max-width: 192px;
+}
+
+.categories__watch {
+    box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    padding: 0 42px;
+    gap: 46px;
+}
+
+.categories__watch-img {
+    max-width: 381px;
+}
+
+.categories__watch-img img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.categories__watch-text {
+    font-size: 15px;
+    line-height: var(--line-hight-128);
+    text-align: right;
+    color: var(--black-color);
+    align-self: center;
+}
+
+.categories__watch-title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 32px;
+    line-height: var(--line-hight-120);
+    max-width: 128px;
+}
+
+.categories__items-right {
+    display: flex;
+    gap: 16px;
+}
+
+.categories__phones {
+    box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+    padding: 144px 0 144px 16px;
+}
+
+.categories__phones-img {
+    max-width: 405px;
+}
+
+.categories__phones-img img {
+    width: 100%;
+}
+
+.categories__phones-text {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: var(--line-hight-128);
+    text-align: center;
+    color: var(--black-color);
+    margin-top: 42px;
+    justify-self: center;
+}
+
+.categories__phones-title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 32px;
+    line-height: var(--line-hight-120);
+    max-width: 250px;
+}
+
+.categories__tablet {
+    box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+    padding: 114px 0 115px;
+}
+
+.categories__tablet-text {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: var(--line-hight-120);
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 42px;
+    justify-self: center;
+}
+
+.categories__tablet-title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 32px;
+    line-height: var(--line-hight-120);
+    text-align: center;
+    color: var(--black-color);
+    max-width: 233px;
+}
+
+.categories__tablet-img {
+    max-width: 467px;
+}
+
+.categories__tablet-img img {
+    width: 100%;
+}
+
+/* =============================================== */
+
+
+.sell__top {
+    margin-bottom: 31px;
+}
+
+.sell__title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 42px;
+    line-height: var(--line-hight-125);
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 9px;
+}
+
+.sell__text {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 13px;
+    line-height: var(--line-hight-129);
+    color: var(--black-color);
+    text-align: center;
+}
+
+.sell__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+
+.sell__item-img {
+    margin-bottom: 10px;
+}
+
+.sell__item-title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 22px;
+    line-height: var(--line-hight-125);
+    color: var(--black-color);
+    display: block;
+    margin-bottom: 9px;
+}
+
+.sell__item-text {
+    font-size: 14px;
+    line-height: var(--line-hight-120);
+    color: #4b4b4b;
+    max-width: 261px;
+}
+
+
+.sell__item-price {
+    margin-top: 8px;
+}
+
+.sell__item-price-first {
+    margin-top: 25px;
+}
+
+/* =============================================== */
+
+
+.best__top {
+    margin-bottom: 97px;
+}
+
+.best__title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 42px;
+    line-height: var(--line-hight-125);
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 9px;
+}
+
+.best__text {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 13px;
+    line-height: var(--line-hight-129);
+    color: var(--black-color);
+    text-align: center;
+}
+
+.best__list {
+    display: flex;
+    gap: 28px;
+}
+
+.best__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.best__item-latest {
+    margin: 0 164px 0 77px;
+}
+
+.best__item-every {
+    margin: 0 29px 0 116px;
+}
+
+.best__item-text {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 13px;
+    line-height: var(--line-hight-129);
+    text-align: center;
+    color: var(--black-color);
+}
+
+.best__item-title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 28px;
+    line-height: var(--line-hight-125);
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 30px;
+}
+
+.best__item-button {
+    max-width: 190px;
+    margin-bottom: 30px;
+}
+
+/* =============================================== */
+
+
+.ideas__top {
+    margin-bottom: 56px;
+}
+
+.ideas__title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 42px;
+    line-height: var(--line-hight-125);
+    text-align: center;
+    color: var(--black-color);
+}
+
+.ideas__text {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 13px;
+    line-height: var(--line-hight-129);
+    text-align: center;
+    color: var(--black-color);
+}
+
+.ideas__bottom {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 74px;
+}
+
+.ideas__img {
+    max-width: 620px;
+}
+
+.ideas__img img {
+    width: 100%;
+}
+
+.ideas__content {
+    max-width: 569px;
+    font-size: 24px;
+    line-height: var(--line-hight-125);
+    color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+
+.ideas__see {
+    font-size: 24px;
+    line-height: var(--line-hight-120);
+    text-transform: capitalize;
+    color: var(--black-color);
+    display: flex;
+    justify-self: center;
+}
+
+/* =============================================== */
+
+
+.look__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 68px;
+}
+
+.look__title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 42px;
+    line-height: var(--line-hight-125);
+    text-align: center;
+    color: var(--black-color);
+    margin-bottom: 24px;
+}
+
+.form {
+    margin-bottom: 40px;
+}
+
+.search {
+    border: 1px solid #c5c5c5;
+    border-radius: 100px;
+    width: 650px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.search-input {
+    width: 100%;
+    font-size: 16px;
+    line-height: var(--line-hight-120);
+    color: var(--black-color);
+}
+
+.search-input::placeholder {
+    font-size: 14px;
+    line-height: var(--line-hight-120);
+    color: var(--black-color);
+}
+
+.look__list {
+    display: flex;
+    gap: 7px 7px;
+    max-width: 534px;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 98px;
+}
+
+
+.look__link {
+    border: 1px solid #c5c5c5;
+    border-radius: 200px;
+    padding: 12px 22px;
+    font-size: 14px;
+    line-height: var(--line-hight-120);
+    color: var(--black-color);
+}
+
+.look__bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.look__bottom-inner {
+    background: url("../img/decor/bg-2.png") 50% 50% no-repeat;
+    height: 450px;
+    width: 935px;
+    padding: 43px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.look__bottom-title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 42px;
+    line-height: var(--line-hight-125);
+    text-align: center;
+    color: var(--black-color);
+}
+
+.look__bottom-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: var(--line-hight-120);
+    text-align: center;
+    color: var(--black-color);
+    margin: 9px 0 14px;
+}
+
+.look__bottom-img {
+    max-width: 233px;
+    margin-bottom: 14px;
+}
+
+.look__bottom-img img {
+    width: 100%;
+}
+
+.look__bottom-form {
+    display: flex;
+}
+
+
+.look__form-email {
+    border: 1px solid #000;
+    border-radius: 54px 0 0 54px;
+    width: 285px;
+    padding: 16px 32px;
+    font-size: 14px;
+    line-height: var(--line-hight-120);
+    color: var(--black-color);
+}
+
+.look__form-email--input {
+    background: inherit;
+    font-size: 15px;
+}
+
+.look__form-email--input::placeholder {
+    font-size: 14px;
+    line-height: var(--line-hight-120);
+    color: var(--black-color);
+}
+
+.look__button {
+    border-radius: 0 200px 200px 0;
+    width: 115px;
+    padding: 16px 33px;
+    background: var(--black-color);
+    font-size: 14px;
+    line-height: var(--line-hight-120);
+    text-align: center;
+    color: #fff;
+}
+
+/* =============================================== */
+
+
+.footer__inner {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 136px;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 394px;
+    width: 100%;
+}
+
+.footer__logo span {
+    max-width: 304px;
+    font-size: 16px;
+    line-height: var(--line-hight-120);
+    color: var(--black-color);
+}
+
+.footer__categories {
+    display: grid;
+    width: 100%;
+    gap: 28px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.footer__col-title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 22px;
+    line-height: var(--line-hight-125);
+    color: var(--black-color);
+    margin-bottom: 20px;
+}
+
+
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer__nav-item {
+    font-size: 17px;
+    line-height: 1.27;
+    color: var(--black-color);
+}
+
+.footer__nav-link {
+    padding: 3px 0;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.footer__made {
+    font-size: 18px;
+    line-height: var(--line-hight-120);
+    color: var(--black-color);
+}
+
+.footer__made span {
+    font-family: "Readex Pro", sans-serif;
+    line-height: var(--line-hight-120);
+    color: var(--black-color);
+}
+
+.footer__powered {
+    font-size: 18px;
+    line-height: var(--line-hight-120);
+    color: var(--black-color);
+}
+
+.footer__powered span {
+    font-family: "Readex Pro", sans-serif;
+    line-height: var(--line-hight-120);
+    color: var(--black-color);
+}
+
+
+
+
+
+
+/* =============================================== */
+
+@media (max-width: 1500px) {
+
+    .best__list {
+        justify-content: space-around;
+    }
+
+    .best__item {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
+    .categories__items-title {
+        font-size: 25px;
+    }
+
+    .categories__watch {
+        gap: 30px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .phones__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .phones__title {
+        font-size: 45px;
+    }
+
+    .phones__img {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .categories__items-right {
+        height: 63vw;
+    }
+
+    .categories__phones {
+        padding: 10vw 0 10vw 10px;
+    }
+
+    .categories__tablet {
+        padding: 10vw 0 10vw 0px;
+    }
+
+
+    /* ----------------- */
+
+    .sell__list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+
+    /* ----------------- */
+
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        margin-bottom: 110px;
+    }
+
+    .footer__logo {
+        align-items: center;
+    }
+}
+
+@media (max-width: 1050px) {
+
+
+    .categories__items-title {
+        font-size: 17px;
+    }
+
+    /* ------------------- */
+
+    .best__list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    /* --------------------- */
+
+    .ideas__content {
+        font-size: 20px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .header__nav {
+        position: fixed;
+        inset: 0;
+        z-index: 10;
+        background: #dfdddd;
+        padding: 26vh 15px 30px;
+        font-size: 24px;
+
+        transform: translateY(-50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all .4s;
+    }
+
+    .header__nav--list {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .header__nav--link {
+        font-size: 20px;
+    }
+
+    .header__menu--mobile {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .body--opened-menu .header__nav {
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .body--opened-menu .header__menu {
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+
+    /* ------------ */
+
+    .categories__title {
+        font-size: 5.3vw;
+    }
+
+    .categories__laptops {
+        padding: 0 5px;
+    }
+
+    .categories__watch {
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    /* -------------- */
+
+    .sell__title {
+        font-size: 5.3vw;
+    }
+
+    /* ------------ */
+
+    .best__title {
+        font-size: 5.3vw;
+    }
+
+    /* ------------ */
+
+    .ideas__title {
+        font-size: 5.3vw;
+    }
+
+    /* ------------ */
+
+    .look__title {
+        font-size: 5.3vw;
+    }
+
+    .look__bottom-title {
+        font-size: 5.3vw;
+    }
+
+    /* ------------ */
+
+    .footer__categories {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    }
+
+    .footer__col-title {
+        margin-bottom: 15px;
+    }
+
+    .footer__nav-list {
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .categories__items-left {
+        gap: 50px;
+    }
+
+    /* ------------------ */
+
+    .ideas__bottom {
+        margin-bottom: 50px;
+        gap: 15px;
+    }
+
+    .ideas__content {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .categories__watch {
+        padding: 0 5px;
+    }
+
+    .categories__watch-title {
+        width: 8vw;
+        gap: 0;
+    }
+
+    .categories__items-text {
+        font-size: 1.8vw;
+    }
+
+    .categories__items-title {
+        font-size: 2vw;
+    }
+
+    /* ----------------- */
+
+    .ideas__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ----------------- */
+
+    .search {
+        width: 550px;
+    }
+}
+
+@media (max-width: 560px) {
+    .look__list {
+        height: 150px;
+    }
+
+    /* -------------- */
+
+    .search {
+        width: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .categories__phones-text {
+        margin-right: 5px;
+    }
+
+    .categories__tablet-text {
+        margin-right: 5px;
+    }
+
+
+    /* ---------------- */
+
+    .best__item-title {
+        margin-bottom: 10px;
+    }
+
+    .best__item-button {
+        margin-bottom: 10px;
+    }
+
+
+
+    /* ---------------- */
+
+    .look__list {
+        height: 180px;
+    }
+
+    .search {
+        width: 300px;
+    }
+
+    .look__form-email {
+        width: 200px;
+    }
+
+    .look__button {
+        width: 80px;
+        font-size: 12px;
+        padding: 16px;
+    }
+
+    /* ---------------- */
+
+    .footer__inner {
+        margin-bottom: 80px;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer__made {
+        font-size: 15px;
+    }
+
+    .footer__powered {
+        font-size: 15px;
+    }
+
+    .created-img svg {
+        width: 18px;
+        height: 15px;
+    }
+
+}
